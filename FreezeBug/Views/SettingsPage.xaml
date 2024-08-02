@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:FreezeBug.Components"
+             xmlns:viewmodel="clr-namespace:FreezeBug.ViewModels"
+             x:Class="FreezeBug.Views.SettingsPage"
+             x:DataType="viewmodel:SettingsViewModel"
+             Title="SettingsPage">
+    <VerticalStackLayout Margin="10" Padding="10">
+        <components:ParameterComponent Name="{Binding MinValue.Name}" Value="{Binding MinValue.Value}" />
+
+        <components:ParameterComponent Name="{Binding MaxValue.Name}" Value="{Binding MaxValue.Value}" Margin="0,10,0,0" />
+
+        <components:ParameterComponent Name="{Binding PrimaryValue.Name}" Value="{Binding PrimaryValue.Value}" Margin="0,10,0,0" />
+
+        <components:ParameterComponent Name="{Binding SecondaryValue.Name}" Value="{Binding SecondaryValue.Value}" Margin="0,10,0,0" />
+
+        <components:ParameterComponent Name="{Binding WarningValue.Name}" Value="{Binding WarningValue.Value}" Margin="0,10,0,0" />
+
+        <components:ParameterComponent Name="{Binding CrashValue.Name}" Value="{Binding CrashValue.Value}" Margin="0,10,0,0" />
+    </VerticalStackLayout>
+</ContentPage>
